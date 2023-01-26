@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Tiles</title>
+  <script>
+    function calculateTilesValue() {
+      // Get all the select elements
+      var selects = document.getElementsByTagName("select");
+      var totalValue = 0;
+
+      // Loop through all the select elements
+      for (var i = 0; i < selects.length; i++) {
+        // Get the selected option's value
+        var selectedValue = selects[i].value;
+
+        // Check if the selected option's value is "Yes"
+        if (selectedValue === "yes") {
+          // Add the value of the corresponding tile to the total value
+          if (i === 0) {
+            totalValue += 16;
+          } else if (i === 1) {
+            totalValue += 32;
+          } else if (i === 2) {
+            totalValue += 8;
+          } else if (i === 3) {
+            totalValue += 4;
+          } else if (i === 4) {
+            totalValue += 2;
+          } else if (i === 5) {
+            totalValue += 1;
+          }
+        }
+      }
+ 
+
+      document.getElementById("submit-button").innerHTML = totalValue;
+      // Display the total value on the page
+      var resultElement = document.querySelector('#submit-button');
+      resultElement.innerHTML = result;
+      resultElement.style.fontWeight = "bold";
+      resultElement.style.fontSize = "40px";
+
+    }
+
+  </script>
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="tile-page">
+    
+    <div class="tile">
+      <img src="Capture1.PNG" alt="tile image">
+      <div class="selectbox">
+        <select>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </div>
+    <div class="tile">
+      <img src="Capture2.PNG" alt="tile image">
+      <div class="selectbox">
+        <select>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </div>
+    <div class="tile">
+      <img src="Capture3.PNG" alt="tile image">
+      <div class="selectbox">
+        <select>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </div>
+    <div class="tile">
+      <img src="Capture4.PNG" alt="tile image">
+      <div class="selectbox">
+        <select>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </div>
+    <div class="tile">
+      <img src="Capture5.PNG" alt="tile image">
+      <div class="selectbox">
+        <select>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </div>
+    <div class="tile">
+      <img src="Capture6.PNG" alt="tile image">
+      <div class="selectbox">
+        <select>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+    </div>
+    <!-- Add the button to the HTML -->
+    <div class="submit-button-container">
+      <button id="submit-button" onclick="calculateTilesValue()" type="submit">Submit</button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

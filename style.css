@@ -1,0 +1,78 @@
+.tile-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; /* fills the entire page */
+    height: 90vh; /* fills the entire page */
+    background-color:orangered; 
+    background-size: cover; /* scale the background image to cover the entire page */
+  }
+  
+  .tile {
+    flex: 0 0 calc(33.33% - 20px); /* 3 tiles per row, 33.33% width minus 20px margin */
+    margin: 10px; /* add margin between tiles */
+    background-color: blueviolet; /* add random color to tiles */
+    border-radius: 10px; /* add border radius to tiles */
+    box-shadow: 5px 5px 10px #aaa; /* add shadow effect to tiles */
+    overflow: hidden; /* add overflow property to tiles */
+    position: relative; /* add position relative to tiles */
+    transition: all 0.3s ease-in-out; /* add transition effect to tiles */
+  }
+  
+  .tile img {
+    width: 100%; /* make the images fill the entire tile */
+  }
+  
+  .tile:hover {
+    transform: scale(1.1); /* increase the size of tiles on hover */
+    box-shadow: 10px 10px 15px #aaa; /* change the shadow effect on hover */
+  }
+  
+  .selectbox {
+    position: absolute; /* add position absolute to select box */
+    bottom: 10px;
+    color: black; /* Change the color of the text */
+    font-size: 20px; 
+    background-color: #e0e0e0; 
+    border: 2px solid #333; 
+  } 
+  
+  .selectbox:hover {
+    background-color: rgb(226, 13, 13);
+  }
+
+
+  .submit-button-container {
+    position: fixed;
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 2; /* Add this to bring the submit button to the front */
+}
+
+  
+  #submit-button {
+    width: 80%; /* Make the button 80% of the container width */ /* Add padding to the button */
+    font-size: 20px; /* Increase the font size */
+    background-color: #4CAF50; /* Change the background color */
+    color: white; /* Change the text color */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Change the cursor on hover */
+    margin: 20px; /* add margin around the button */
+    padding: 10px 20px; /* add padding to the button */
+  }
+  
+  #submit-button:hover {
+    background-color: #3e8e41; /* Change the background color on hover */
+  }
+
+  #result {
+    font-size: 100px; /* Large font size */
+    text-align: center; /* Center the text */
+    position: absolute; /* Position the element */
+    top: 50%; /* Center the element vertically */
+    left: 50%; /* Center the element horizontally */
+    transform: translate(-50%, -50%); /* Center the element */
+  }
+  
+  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Website</title>
+    <style>
+        /* Styles for the homepage */
+        .fancy-header {
+            text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        .mid-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 50px;
+            margin: 0 auto;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-size: 1.5em;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        /* Styles for the tile page */
+
+        .tile select {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        body {
+            background-image: url('Magic_BG.jpg');
+            /* replace with actual path to image */
+            background-size: cover;
+            /* scales the background image to cover the entire element */
+            background-repeat: no-repeat;
+            /* prevents the image from repeating */
+            background-position: center;
+            /* centers the image */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fancy-header">Welcome to My Website</div>
+    <div class="mid-button" onclick="location.href='tiles.html';">Go to Tiles</div>
+</body>
+
+</html>
